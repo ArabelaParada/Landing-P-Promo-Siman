@@ -1,0 +1,161 @@
+:root {
+    --blanco: #ffffff; 
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --red: #ff0000;
+    --fuente-principal:3.8rem;
+}
+
+/* Reset básico */
+
+  .top-bar {
+    background-color: #a32e2e;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-group {
+    max-width: 500px;
+    width: 50%;
+  }
+
+
+  .nav-bg
+{
+        border: 1px solid #e70e0e5d; /* rojo suave */
+        padding: 1rem; /* Espacio interno */
+        border-radius: 15px; /* Bordes redondeados */
+        background-color: rgba(239, 245, 241, 0.137); /* Fondo gris */
+        margin-bottom: 1.5rem; /* Margen inferior */
+      }
+    
+
+    .navegacion-principal{
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+.navegacion-principal a {
+   color: var(--gris);
+   text-decoration: none;
+
+}
+
+.carousel {
+    max-width: 1300px; /* Ajusta el ancho */
+    margin: 0 auto;
+}
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+.card {
+    transition: transform 0.3s;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 650px;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+ 
+
+
+.item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+}
+
+.grande {
+  grid-row: span 1;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distribuye espacio entre elementos */
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box; /* Incluye padding en el cálculo del tamaño */
+  color: #212121;
+}
+
+.texto h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+.texto h2 span {
+  display: block;
+  font-weight: lighter;
+  color: #212121;
+}
+
+.texto a {
+  color: rgb(4, 27, 241);
+  font-weight: bold;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+}
+/*  Efecto de zoom suave al pasar el mouse sobre la imagen */
+.item img {
+  transition: transform 0.4s ease;  /* Transición suave */
+}
+
+.item:hover img {
+  transform: scale(1.1);  /* Aumenta el tamaño un poco al pasar el puntero */
+}
+
+.imagen-ajustada {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio uniforme */
+  justify-content: center; /* Centrado opcional */
+  padding: 20px;
+
+}
+
